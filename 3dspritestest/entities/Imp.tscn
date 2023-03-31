@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dhmscqmfcip23"]
+[gd_scene load_steps=24 format=3 uid="uid://dhmscqmfcip23"]
 
 [ext_resource type="Script" path="res://entities/Enemy.gd" id="1_dnb8u"]
 [ext_resource type="Texture2D" uid="uid://b58mxnqrnr0d7" path="res://assets/imp/TROOA1.png" id="2_utltn"]
@@ -110,6 +110,9 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_1kyqn"]
+size = Vector3(0.416962, 0.544714, 0.37497)
+
 [node name="Imp" type="CharacterBody3D"]
 script = ExtResource("1_dnb8u")
 
@@ -120,7 +123,10 @@ alpha_cut = 1
 texture_filter = 4
 sprite_frames = SubResource("SpriteFrames_k4c7n")
 animation = &"WalkA"
-frame_progress = 0.0236438
+frame_progress = 0.442761
 speed_scale = 0.6
 
 [node name="Agent" type="NavigationAgent3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1kyqn")

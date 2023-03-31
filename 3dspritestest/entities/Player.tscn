@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://5ja3v5yhsg4q"]
+[gd_scene load_steps=24 format=3 uid="uid://5ja3v5yhsg4q"]
 
 [ext_resource type="Texture2D" uid="uid://ch1f6cbft1j4g" path="res://assets/doomguy/PLAYA1.png" id="1_6rsmy"]
 [ext_resource type="Script" path="res://entities/Player.gd" id="1_yo2pv"]
@@ -110,6 +110,9 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_iq5pb"]
+size = Vector3(0.424051, 0.606306, 0.420829)
+
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_yo2pv")
 
@@ -120,5 +123,8 @@ alpha_cut = 1
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_sxvd5")
 animation = &"WalkA"
-frame_progress = 0.557106
+frame_progress = 0.417904
 speed_scale = 0.6
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_iq5pb")
