@@ -1,6 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://5ja3v5yhsg4q"]
+[gd_scene load_steps=23 format=3 uid="uid://5ja3v5yhsg4q"]
 
 [ext_resource type="Texture2D" uid="uid://ch1f6cbft1j4g" path="res://assets/doomguy/PLAYA1.png" id="1_6rsmy"]
+[ext_resource type="Script" path="res://entities/Player.gd" id="1_yo2pv"]
 [ext_resource type="Texture2D" uid="uid://b7t3jjsf0pfw1" path="res://assets/doomguy/PLAYB1.png" id="2_8un26"]
 [ext_resource type="Texture2D" uid="uid://cbtgq8piy67y4" path="res://assets/doomguy/PLAYC1.png" id="3_6mxtm"]
 [ext_resource type="Texture2D" uid="uid://b8elg4vhddl2v" path="res://assets/doomguy/PLAYD1.png" id="4_7ihwt"]
@@ -38,7 +39,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"WalkA",
-"speed": 15.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -55,7 +56,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"WalkBC",
-"speed": 15.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -72,7 +73,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"WalkDE",
-"speed": 15.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -89,7 +90,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"WalkF",
-"speed": 15.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -106,10 +107,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"WalkGH",
-"speed": 15.0
+"speed": 10.0
 }]
 
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_yo2pv")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 billboard = 2
@@ -117,6 +119,6 @@ shaded = true
 alpha_cut = 1
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_sxvd5")
-animation = &"WalkGH"
-frame_progress = 0.756279
+animation = &"WalkA"
+frame_progress = 0.557106
 speed_scale = 0.6

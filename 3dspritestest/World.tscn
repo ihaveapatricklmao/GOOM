@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://c7a47jbv2f1mq"]
+[gd_scene load_steps=3 format=3 uid="uid://c7a47jbv2f1mq"]
+
+[ext_resource type="PackedScene" uid="uid://dhmscqmfcip23" path="res://entities/Imp.tscn" id="1_iwta7"]
+[ext_resource type="PackedScene" uid="uid://5ja3v5yhsg4q" path="res://entities/Player.tscn" id="2_up2fg"]
 
 [node name="World" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.992)
+
+[node name="Imp" parent="." instance=ExtResource("1_iwta7")]
+
+[node name="Player" parent="." instance=ExtResource("2_up2fg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.485157, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.559453, -0.828862, 0, 0.828862, 0.559453, 0, 1.44136, 0)

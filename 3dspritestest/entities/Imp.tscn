@@ -119,8 +119,8 @@ shaded = true
 alpha_cut = 1
 texture_filter = 4
 sprite_frames = SubResource("SpriteFrames_k4c7n")
-animation = &"WalkGH"
-frame_progress = 0.678618
+animation = &"WalkA"
+frame_progress = 0.0236438
 speed_scale = 0.6
 
 [node name="Agent" type="NavigationAgent3D" parent="."]
