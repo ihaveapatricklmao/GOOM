@@ -1,177 +1,114 @@
-[gd_scene load_steps=25 format=3 uid="uid://dhmscqmfcip23"]
+[gd_scene load_steps=23 format=3 uid="uid://dhmscqmfcip23"]
 
 [ext_resource type="Script" path="res://entities/Enemy.gd" id="1_dnb8u"]
-[ext_resource type="Texture2D" uid="uid://ctly54ml5oyfm" path="res://assets/doom64hellknight.png" id="2_gtf7j"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w6vv3"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(0, 36, 87, 113)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sdk1g"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(80, 36, 73, 108)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ern0s"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(146, 35, 73, 111)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yvjka"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(219, 35, 73, 111)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_clenp"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(66, 148, 66, 113)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cbguy"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(0, 148, 66, 113)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g28j4"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(132, 148, 66, 113)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hmndl"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(198, 148, 66, 113)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m4rxd"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(0, 257, 63, 123)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ni3rp"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(63, 257, 63, 123)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_76xv3"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(134, 257, 50, 123)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uebhg"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(183, 257, 73, 124)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_g4hd0"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(4, 484, 65, 121)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7ab7m"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(69, 484, 65, 121)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h0kwe"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(134, 484, 65, 121)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_24lq3"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(199, 484, 65, 121)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2ldqd"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(15, 372, 55, 124)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_osf8k"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(70, 372, 55, 124)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3x7t7"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(125, 372, 55, 124)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cxni8"]
-atlas = ExtResource("2_gtf7j")
-region = Rect2(180, 372, 55, 124)
+[ext_resource type="Texture2D" uid="uid://b58mxnqrnr0d7" path="res://assets/imp/TROOA1.png" id="2_utltn"]
+[ext_resource type="Texture2D" uid="uid://c0ygpgkklbtvm" path="res://assets/imp/TROOB1.png" id="3_akrbx"]
+[ext_resource type="Texture2D" uid="uid://5ly1s63ckfbh" path="res://assets/imp/TROOC1.png" id="4_f0y6c"]
+[ext_resource type="Texture2D" uid="uid://djftxsu001w1n" path="res://assets/imp/TROOD1.png" id="5_5dhms"]
+[ext_resource type="Texture2D" uid="uid://73c6nxye6u4g" path="res://assets/imp/TROOA2A8.png" id="6_wjltp"]
+[ext_resource type="Texture2D" uid="uid://b5nmgsu6eirid" path="res://assets/imp/TROOB2B8.png" id="7_fl4sd"]
+[ext_resource type="Texture2D" uid="uid://cy1ed7skiill0" path="res://assets/imp/TROOC2C8.png" id="8_h5nlc"]
+[ext_resource type="Texture2D" uid="uid://b08imvxaf0cej" path="res://assets/imp/TROOD2D8.png" id="9_dbcu2"]
+[ext_resource type="Texture2D" uid="uid://dy5i4rocuxmgg" path="res://assets/imp/TROOA3A7.png" id="10_hiyue"]
+[ext_resource type="Texture2D" uid="uid://cv1d8r3fd6hwj" path="res://assets/imp/TROOB3B7.png" id="11_go4nm"]
+[ext_resource type="Texture2D" uid="uid://cscu7erac6dli" path="res://assets/imp/TROOC3C7.png" id="12_vcsck"]
+[ext_resource type="Texture2D" uid="uid://chp57sn2bntob" path="res://assets/imp/TROOD3D7.png" id="13_ykbhe"]
+[ext_resource type="Texture2D" uid="uid://o201i1ovp5yl" path="res://assets/imp/TROOA4A6.png" id="14_fap76"]
+[ext_resource type="Texture2D" uid="uid://cwsxlifevvhk7" path="res://assets/imp/TROOB4B6.png" id="15_287ry"]
+[ext_resource type="Texture2D" uid="uid://nt2n34wb70fu" path="res://assets/imp/TROOC4C6.png" id="16_yu1kv"]
+[ext_resource type="Texture2D" uid="uid://3cpekbm1vwdl" path="res://assets/imp/TROOD4D6.png" id="17_sfux4"]
+[ext_resource type="Texture2D" uid="uid://dxkf4js7tniel" path="res://assets/imp/TROOA5.png" id="18_vfokd"]
+[ext_resource type="Texture2D" uid="uid://d230lubh3t88w" path="res://assets/imp/TROOB5.png" id="19_y68px"]
+[ext_resource type="Texture2D" uid="uid://bgmmleljhbsay" path="res://assets/imp/TROOC5.png" id="20_tnp8n"]
+[ext_resource type="Texture2D" uid="uid://eqts06tlfdbv" path="res://assets/imp/TROOD5.png" id="21_eq8p6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k4c7n"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_w6vv3")
+"texture": ExtResource("2_utltn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_sdk1g")
+"texture": ExtResource("3_akrbx")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ern0s")
+"texture": ExtResource("4_f0y6c")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yvjka")
+"texture": ExtResource("5_5dhms")
 }],
 "loop": true,
 "name": &"WalkA",
-"speed": 7.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_clenp")
+"texture": ExtResource("6_wjltp")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cbguy")
+"texture": ExtResource("7_fl4sd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_g28j4")
+"texture": ExtResource("8_h5nlc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hmndl")
+"texture": ExtResource("9_dbcu2")
 }],
 "loop": true,
 "name": &"WalkBC",
-"speed": 7.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m4rxd")
+"texture": ExtResource("10_hiyue")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ni3rp")
+"texture": ExtResource("11_go4nm")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_76xv3")
+"texture": ExtResource("12_vcsck")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uebhg")
+"texture": ExtResource("13_ykbhe")
 }],
 "loop": true,
 "name": &"WalkDE",
-"speed": 7.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_g4hd0")
+"texture": ExtResource("14_fap76")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7ab7m")
+"texture": ExtResource("15_287ry")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_h0kwe")
+"texture": ExtResource("16_yu1kv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_24lq3")
+"texture": ExtResource("17_sfux4")
 }],
 "loop": true,
 "name": &"WalkF",
-"speed": 7.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2ldqd")
+"texture": ExtResource("18_vfokd")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_osf8k")
+"texture": ExtResource("19_y68px")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3x7t7")
+"texture": ExtResource("20_tnp8n")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cxni8")
+"texture": ExtResource("21_eq8p6")
 }],
 "loop": true,
 "name": &"WalkGH",
-"speed": 7.0
+"speed": 10.0
 }]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_tkycv"]
 
 [node name="Imp" type="CharacterBody3D"]
 script = ExtResource("1_dnb8u")
@@ -181,12 +118,7 @@ billboard = 2
 shaded = true
 texture_filter = 4
 sprite_frames = SubResource("SpriteFrames_k4c7n")
-animation = &"WalkGH"
-frame_progress = 0.822221
-speed_scale = 0.7
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.62747, 0, 0, 0, 0.995976, 0, 0, 0, 0.564291, 0, 0.0586885, 0)
-shape = SubResource("BoxShape3D_tkycv")
+animation = &"WalkA"
+speed_scale = 0.6
 
 [node name="Agent" type="NavigationAgent3D" parent="."]
