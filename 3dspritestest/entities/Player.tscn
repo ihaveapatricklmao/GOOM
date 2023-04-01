@@ -123,7 +123,7 @@ alpha_cut = 1
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_sxvd5")
 animation = &"WalkA"
-frame_progress = 0.417904
+frame_progress = 0.437223
 speed_scale = 0.6
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
